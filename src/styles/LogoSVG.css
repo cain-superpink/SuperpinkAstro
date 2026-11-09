@@ -1,0 +1,31 @@
+#Green,
+#Blue {
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#SuperPinkLogo {
+  max-width: 750px;
+  text-align: center;
+}
+
+#SuperPinkLogo:hover {
+  cursor: pointer;
+}
+#SuperPinkLogo:hover #Green {
+  transform: translate(-2%, -6%);
+  opacity: 100%;
+}
+
+#SuperPinkLogo:hover #Blue {
+  transform: translate(-1%, -3%);
+  opacity: 100%;
+}
+
+#Green {
+  fill: #d5e887;
+  opacity: 0;
+}
+
+#Blue {
+  fill: #87e8de;
+  opacity: 0;
+}

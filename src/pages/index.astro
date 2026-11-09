@@ -1,8 +1,11 @@
 ---
-import Welcome from "../components/Welcome.astro";
-import Layout from "../layouts/Layout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
-
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Projects from "../components/Projects.astro";
+import Logo from "../components/Logo.astro";
+import "../styles/LogoSVG.css";
 const pageTitle = "Home Page";
 ---
 
@@ -11,22 +14,32 @@ const pageTitle = "Home Page";
     <meta charset="utf-8" />
     <link
       rel="icon"
-      type="image/svg+xml"
-      href="/favicon.svg"
+      href="src\assets\Favicon.ico"
     />
     <meta
       name="viewport"
       content="width=device-width"
     />
 
-    <title>{pageTitle}</title>
+    <title>Superpink Media</title>
   </head>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="about">About</a>
-      <a href="blog">Blog</a>
-    </nav>
-    <h1>{pageTitle}</h1>
+    <!-- <Header /> -->
+    <header><Logo /></header>
+
+    <main>
+      <h1>About me</h1>
+      <div class="aboutText">
+        <p>
+          Hi, my name is Cain, I am a digital musician and multimedia
+          professional. Superpink media is my corner of the internet to share my
+          passions and showcase my projects, mainly in music, video and
+          programming.
+        </p>
+      </div>
+      <h1>Projects</h1>
+      <Projects />
+    </main>
+    <Footer />
   </body>
 </html>

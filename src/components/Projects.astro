@@ -1,0 +1,85 @@
+---
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
+const orderedProjects = projects.sort(
+  (a, b) => b.data.ReleaseDate.valueOf() - a.data.ReleaseDate.valueOf(),
+);
+console.log(JSON.stringify(projects, null, 2));
+---
+
+<div class="projects">
+  {
+    orderedProjects.map(
+      ({
+        data: {
+          title,
+          ReleaseDate,
+          spotifyURL,
+          youtubeURL,
+          siteURL,
+          soundcloudURL,
+          image,
+        },
+        body,
+      }) => {
+        return (
+          <div class="projectContainer">
+            <div class="projectTitleRow">
+              <h2>{title}</h2>
+            </div>
+
+            {ReleaseDate && (
+              <p>
+                {ReleaseDate.getDate()}-{ReleaseDate.getMonth() + 1}-
+                {ReleaseDate.getFullYear()}
+              </p>
+            )}
+            <p>{body}</p>
+            <a
+              href={spotifyURL || youtubeURL || siteURL || soundcloudURL}
+              class="imageContainer"
+              target="_blank">
+              <img
+                src={image}
+                alt=""
+              />
+            </a>
+            <div class="projectLinkContainer">
+              {spotifyURL && (
+                <a
+                  target="_blank"
+                  href={spotifyURL}>
+                  Listen on Spotify
+                </a>
+              )}
+
+              {youtubeURL && (
+                <a
+                  target="_blank"
+                  href={youtubeURL}>
+                  Watch on Youtube
+                </a>
+              )}
+
+              {siteURL && (
+                <a
+                  target="_blank"
+                  href={siteURL}>
+                  Visit site
+                </a>
+              )}
+              {soundcloudURL && (
+                <a
+                  target="_blank"
+                  href={soundcloudURL}>
+                  Listen on Soundcloud
+                </a>
+              )}
+            </div>
+          </div>
+        );
+      },
+    )
+  }
+</div>

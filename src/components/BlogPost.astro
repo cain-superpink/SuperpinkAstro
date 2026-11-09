@@ -1,0 +1,36 @@
+---
+const { url, title } = Astro.props;
+---
+
+<style>
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .blogPost {
+    border: 1px solid #c328d9;
+    margin: 1rem auto 1rem auto;
+    padding: 0.5rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    width: 50%;
+  }
+
+  .blogPost:hover {
+    background-color: #c328d9;
+    cursor: pointer;
+    color: #f6f3f4;
+    > a {
+      color: #f6f3f4;
+    }
+  }
+</style>
+<div
+  onclick="location.href={url}"
+  class="blogPost">
+  <a href={url}>{title}</a>
+</div>

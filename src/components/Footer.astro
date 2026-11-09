@@ -1,0 +1,58 @@
+---
+const platform = "github";
+const username = "cain-superpink";
+import Social from "./Social.astro";
+---
+
+<style>
+  h3 {
+    font-weight: 400;
+    margin: 0;
+    color: #f6f3f4;
+  }
+
+  .vertical-line {
+    width: 1px;
+    height: auto;
+    background-color: white;
+  }
+</style>
+<footer>
+  <div class="footer-container">
+    <div class="footer-links-col">
+      <h3>Rockets Explode</h3>
+      <Social
+        platform="Youtube"
+        username="@rockets-explode"
+      />
+
+      <Social
+        platform="HyperFollow"
+        username="RocketsExplode"
+      />
+      <Social
+        platform="Tiktok"
+        username="@rockets.explode"
+      />
+    </div>
+    <div class="footer-links-col">
+      <h3>Dolfeeen</h3>
+      <Social
+        platform="Youtube"
+        username="@dolfeeen"
+      />
+      <Social
+        platform="Tiktok"
+        username="@dolfeeen"
+      />
+    </div>
+
+    <div class="footer-links-col">
+      <h3>Superpink</h3>
+      <Social
+        platform="Github"
+        username="cain-superpink"
+      />
+    </div>
+  </div>
+</footer>
