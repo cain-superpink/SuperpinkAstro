@@ -5,7 +5,6 @@ const projects = await getCollection("projects");
 const orderedProjects = projects.sort(
   (a, b) => b.data.ReleaseDate.valueOf() - a.data.ReleaseDate.valueOf(),
 );
-console.log(JSON.stringify(projects, null, 2));
 ---
 
 <div class="projects">
