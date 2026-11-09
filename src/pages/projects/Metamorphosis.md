@@ -1,6 +1,6 @@
 ---
 title: "Metamorphosis: How Weezer Grew Out their Wings in 'Pinkerton'"
-image: "../src/assets/Thumbnails/Metamorphosis.jpg"
+image: "../../assets/Thumbnails/Metamorphosis.jpg"
 
 ReleaseDate: 2023-05-01
 tags: ["video"]

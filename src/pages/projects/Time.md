@@ -1,6 +1,6 @@
 ---
 title: "Time"
-image: "../src/assets/Thumbnails/Time.png"
+image: "../../assets/Thumbnails/Time.png"
 ReleaseDate: 2026-07-23
 tags: ["music"]
 spotifyURL: "https://open.spotify.com/album/10Q2ZhsE1rqzdibgnzkbM4"

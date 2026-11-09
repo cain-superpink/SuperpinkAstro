@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
 const projects = await getCollection("projects");
@@ -39,10 +40,7 @@ const orderedProjects = projects.sort(
               href={spotifyURL || youtubeURL || siteURL || soundcloudURL}
               class="imageContainer"
               target="_blank">
-              <img
-                src={image}
-                alt=""
-              />
+              {image && <Image src={image} alt="" />}
             </a>
             <div class="projectLinkContainer">
               {spotifyURL && (

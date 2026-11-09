@@ -1,6 +1,6 @@
 ---
 title: "To Arms"
-image: "../src/assets/Thumbnails/To Arms.jpg"
+image: "../../assets/Thumbnails/To Arms.jpg"
 
 ReleaseDate: 2023-07-16
 tags: ["music"]

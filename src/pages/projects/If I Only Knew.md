@@ -1,6 +1,6 @@
 ---
 title: "If I Only Knew"
-image: "../src/assets/Thumbnails/If I only knew.png"
+image: "../../assets/Thumbnails/If I only knew.png"
 
 ReleaseDate: 2026-08-15
 tags: ["music"]

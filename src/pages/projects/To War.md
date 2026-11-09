@@ -1,6 +1,6 @@
 ---
 title: "To War"
-image: "../src/assets/Thumbnails/To War.jpg"
+image: "../../assets/Thumbnails/To War.jpg"
 
 ReleaseDate: 2023-07-16
 tags: ["music"]

@@ -1,6 +1,6 @@
 ---
 title: "Ambisonic Piece: Ringing a Bell"
-image: "../src/assets/Thumbnails/Ringing a bell.webp"
+image: "../../assets/Thumbnails/Ringing a bell.webp"
 
 ReleaseDate: 2020-10-03
 tags: ["music"]

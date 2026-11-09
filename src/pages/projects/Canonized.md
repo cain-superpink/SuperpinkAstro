@@ -1,6 +1,6 @@
 ---
 title: "Canonized: The Games You Can't Stop Talking About"
-image: "../src/assets/Thumbnails/Canonized.jpg"
+image: "../../assets/Thumbnails/Canonized.jpg"
 
 ReleaseDate: 2023-05-01
 tags: ["video"]

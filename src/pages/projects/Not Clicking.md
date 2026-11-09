@@ -1,6 +1,6 @@
 ---
 title: "Ambisonic Piece: Not Clicking"
-image: "../src/assets/Thumbnails/Not Clicking.webp"
+image: "../../assets/Thumbnails/Not Clicking.webp"
 
 ReleaseDate: 2020-10-03
 tags: ["music"]

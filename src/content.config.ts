@@ -4,9 +4,9 @@ import { z } from "astro/zod";
 
 const projects = defineCollection({
   loader: glob({ base: "./src/pages/projects", pattern: "**/*.{md,mdx}" }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
-    image: z.string().optional(),
+    image: image().optional(),
     ReleaseDate: z.date(),
     tags: z.array(z.string()).optional(),
     youtubeURL: z.string().optional(),

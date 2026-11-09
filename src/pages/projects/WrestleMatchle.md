@@ -1,6 +1,6 @@
 ---
 title: "Wrestlematchle"
-image: "../src/assets/Thumbnails/WrestleMatchle.png"
+image: "../../assets/Thumbnails/WrestleMatchle.png"
 
 ReleaseDate: 2026-10-01
 tags: ["programming"]

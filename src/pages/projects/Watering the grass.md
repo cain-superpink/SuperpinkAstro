@@ -1,6 +1,6 @@
 ---
 title: "Ambisonic Piece: Watering the Grass"
-image: "../src/assets/Thumbnails/Watering the grass.webp"
+image: "../../assets/Thumbnails/Watering the grass.webp"
 
 ReleaseDate: 2020-10-03
 tags: ["music"]
