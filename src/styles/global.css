@@ -292,3 +292,7 @@ a.btn:hover {
 .projectContainer:nth-child(odd) {
   background-color: rgba(226, 221, 221, 0.241);
 }
+
+.dateText {
+  text-align: right;
+}

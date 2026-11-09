@@ -30,7 +30,7 @@ const orderedProjects = projects.sort(
             </div>
 
             {ReleaseDate && (
-              <p>
+              <p class="dateText">
                 {ReleaseDate.getDate()}-{ReleaseDate.getMonth() + 1}-
                 {ReleaseDate.getFullYear()}
               </p>
@@ -40,7 +40,12 @@ const orderedProjects = projects.sort(
               href={spotifyURL || youtubeURL || siteURL || soundcloudURL}
               class="imageContainer"
               target="_blank">
-              {image && <Image src={image} alt="" />}
+              {image && (
+                <Image
+                  src={image}
+                  alt=""
+                />
+              )}
             </a>
             <div class="projectLinkContainer">
               {spotifyURL && (
